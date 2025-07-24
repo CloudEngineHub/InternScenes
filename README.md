@@ -146,8 +146,8 @@ The layout format is listed as follows:
             0.0,
             -0.0
         ]
-    }
-...
+    },
+   ...
 ]
 ```
 
