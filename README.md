@@ -22,7 +22,7 @@
       <strong>InternScenes</strong> comprises approximately <strong>40,000 diverse scenes</strong> and <strong>1.96M 3D objects</strong> that cover <strong>15 common scene types</strong> and <strong>288 object classes</strong>, which is roughly <strong>10 times larger than existing datasets</strong>.
   </p>
 
-  <h2>💡 Highlights</h2>
+## 💡 Highlights
 
   <div class="section">
     <p>Existing 3D scene datasets often suffer from:</p>
@@ -63,15 +63,11 @@
   - <code>2025/07</code> InternScenes-Real2Sim v1.0 released.
 
 ## 📋 Table of Contents
-- [InternScenes: A Large-scale Interactive Indoor Scene Dataset with Realistic Layouts](#internscenes-a-large-scale-interactive-indoor-scene-dataset-with-realistic-layouts)
   - [🏡 Introduction](#-introduction)
-    - [Which tasks will benefit from our dataset?](#which-tasks-will-benefit-from-our-dataset)
-    - [What's included to support these tasks?](#whats-included-to-support-these-tasks)
+  - [💡 Highlights](#-highlights)
   - [🪄 News](#-news)
   - [📋 Table of Contents](#-table-of-contents)
   - [⚙️ Getting Started](#️-getting-started)
-    - [Installation](#installation)
-    - [Data Preparation](#data-preparation)
   - [📖 Tutorial](#-tutorial)
   - [📋 TODO List](#-todo-list)
   - [🧷 Citation](#-citation)
