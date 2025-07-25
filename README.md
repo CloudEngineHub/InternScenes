@@ -10,8 +10,8 @@
 </div>
 </p>
 <div align="center">
-    <a href='https://marjordcpz.github.io/InternScenes.github.io'><img src='https://img.shields.io/badge/Paper-arXiv-%232986fc'></a> &nbsp;
-    <a href='https://marjordcpz.github.io/InternScenes.github.io'><img src='https://img.shields.io/badge/Data-HuggingFace-%23fe236d?&logo=huggingface'></a> &nbsp;
+    <a href='https://github.com/InternRobotics/InternScenes'><img src='https://img.shields.io/badge/Paper-arXiv-%232986fc'></a> &nbsp;
+    <a href='https://huggingface.co/datasets/InternRobotics/InternScenes'><img src='https://img.shields.io/badge/Data-HuggingFace-%23fe236d?&logo=huggingface'></a> &nbsp;
     <a href='https://marjordcpz.github.io/InternScenes.github.io'><img src='https://img.shields.io/badge/Home-Website-05a4a7?'></a> &nbsp;
 </div>
 
@@ -81,7 +81,7 @@
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/PC1E-bit/InternScenes.git
+git https://github.com/InternRobotics/InternScenes.git
 cd InternScenes
 ```
 
@@ -106,7 +106,7 @@ pip install isaacsim==4.1.0 isaacsim-extscache-physics==4.1.0 isaacsim-extscache
 ``` -->
 
 ### Data Preparation
-Please refer to the [guide](https://github.com/PC1E-bit/InternScenes/tree/master/data) for downloading and organization.
+Please refer to the [guide](https://github.com/InternRobotics/InternScenes/tree/master/data) for downloading and organization.
 
 ```shell
 InternScenes-Real2Sim/
@@ -148,7 +148,7 @@ The layout format is listed as follows:
 ```
 
 ## 📖 Tutorial
-We provide a simple tutorial [here](https://github.com/PC1E-bit/InternScenes/tree/master/tutorial) as a guideline for the visualization and basic usage of our dataset. Welcome to try and post your suggestions!
+We provide a simple tutorial [here](https://github.com/InternRobotics/InternScenes/blob/master/tutorial/tutorial.ipynb) as a guideline for the visualization and basic usage of our dataset. Welcome to try and post your suggestions!
 
 
 ## 📋 TODO List
