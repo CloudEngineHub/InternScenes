@@ -10,7 +10,7 @@
 </div>
 </p>
 <div align="center">
-    <a href='https://github.com/InternRobotics/InternScenes'><img src='https://img.shields.io/badge/Paper-arXiv-%232986fc'></a> &nbsp;
+    <a href='https://arxiv.org/abs/2509.10813'><img src='https://img.shields.io/badge/Paper-arXiv-%232986fc'></a> &nbsp;
     <a href='https://huggingface.co/datasets/InternRobotics/InternScenes'><img src='https://img.shields.io/badge/Data-HuggingFace-%23fe236d?&logo=huggingface'></a> &nbsp;
     <a href='https://marjordcpz.github.io/InternScenes.github.io'><img src='https://img.shields.io/badge/Home-Website-05a4a7?'></a> &nbsp;
 </div>
