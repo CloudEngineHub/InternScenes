@@ -208,20 +208,36 @@ class SceneComposer():
 
             total_transform = transform_final
             
-            # load mesh
-            mesh.apply_transform(total_transform)
-            
-            return [mesh], geometry_name
+            return mesh, geometry_name, total_transform
 
         def process_instance(index):
             instance = instance_infos[index]
             result = process_single_instance(instance)
 
             if result is not None:
-                meshes, geometry_name = result
+                mesh_or_scene, parent_node_name, transform = result
+                parent_node_name = str(index) + '_' + parent_node_name
                 with lock:
-                    for idx, mesh_item in enumerate(meshes):
-                        scene.add_geometry(mesh_item, geom_name=f"{idx}_{geometry_name}")
+                    scene.graph.update(frame_to=parent_node_name, matrix=transform)
+
+                    if isinstance(mesh_or_scene, trimesh.Scene):
+                        for geom_name, mesh_part in mesh_or_scene.geometry.items():
+                            nodes_for_this_geometry = mesh_or_scene.graph.geometry_nodes.get(geom_name, [])
+
+                            for i, node_name_in_subscene in enumerate(nodes_for_this_geometry):
+                                internal_transform, _ = mesh_or_scene.graph.get(node_name_in_subscene)
+                                scene.add_geometry(
+                                    mesh_part,
+                                    geom_name=f"{parent_node_name}_{geom_name}_{i}",
+                                    transform=internal_transform,
+                                    parent_node_name=parent_node_name
+                                )
+                    else: # 
+                        scene.add_geometry(
+                            mesh_or_scene,
+                            geom_name=parent_node_name + "_geom",
+                            parent_node_name=parent_node_name
+                        )
                 print(f"process_instance {index} done")
 
         # use thread pool to process all instances
